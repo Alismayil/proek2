@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  background-image: url(https://preview.colorlib.com/theme/sierra/img/home-slider/slider-bg-1.png.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+header nav {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 100px;
+  position: relative;
+}
+header nav img {
+  object-fit: contain;
+  width: 120px;
+}
+header nav > ul {
+  display: flex;
+  gap: 55px;
+  align-items: center;
+}
+header nav > ul li {
+  height: 100%;
+  position: relative;
+}
+header nav > ul li a {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+header nav > ul .first {
+  color: black;
+}
+header nav > ul a {
+  color: white;
+  transition: 0.5s;
+  font-weight: bold;
+}
+header nav > ul a:hover {
+  color: black;
+  transition: 0.5s;
+}
+header nav > ul .submenu {
+  background-color: rgb(0, 0, 0);
+  flex-direction: column;
+  width: 250px;
+  position: absolute;
+  top: 90px;
+  right: -100px;
+  display: none;
+}
+header nav > ul .submenu li {
+  padding: 10px 10px 20px 10px;
+  height: 100%;
+}
+header nav > ul .submenu :hover {
+  color: rgb(154, 176, 236);
+}
+header nav > ul li:hover .submenu {
+  display: block;
+}
+header nav #navbar_icon {
+  display: none;
+  margin-top: 38px;
+  font-size: 30px;
+}
+@media screen and (max-width: 1134px) {
+  header nav ul {
+    display: none;
+  }
+  header nav #navbar_icon {
+    display: block;
+  }
+}
+header .container {
+  display: flex;
+  justify-content: center;
+  padding: 0px 20%;
+  align-items: center;
+}
+header .container .header_left_box {
+  width: 57%;
+  height: 400px;
+}
+header .container .header_left_box h2 {
+  font-size: 60px;
+}
+header .container .header_left_box p {
+  font-size: 32px;
+}
+header .container .header_left_box .header_btn {
+  background: linear-gradient(90deg, rgba(209, 0, 244, 0.7091211485) 0%, rgb(154, 176, 236) 100%);
+  padding: 20px 10px;
+  width: 160px;
+  text-align: center;
+  color: white;
+  border-radius: 40px;
+  margin-top: 30px;
+  border: 5px solid rgb(154, 176, 236);
+}
+header .container .header_left_box .header_btn:hover {
+  background: linear-gradient(90deg, rgb(154, 176, 236) 0%, rgba(209, 0, 244, 0.7091211485) 100%);
+}
+header .container .header_left_right img {
+  margin-top: 28%;
+}
+
+@media only screen and (max-width: 1134px) {
+  header .container .header_left_box h2 {
+    font-size: 40px;
+  }
+}/*# sourceMappingURL=main.css.map */
